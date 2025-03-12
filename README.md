@@ -55,6 +55,7 @@ advisor-dashboard/
    '''
    docker run --name some-postgres -p 5431:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
    '''
+   
    OR
    - Start the PostgreSQL service from pgAdmin
 
