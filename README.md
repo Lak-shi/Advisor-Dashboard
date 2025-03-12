@@ -66,16 +66,16 @@ npm run dev
 
 Server should start on **http://localhost:5001**
 
-## API Endpoints
+### API Endpoints
 ### 1. Get Total Managed Assets
 ```
-GET /api/stats/total-assets
+[GET /api/stats/total-assets](http://localhost:5001/api/stats/total-assets)
 Response for sample data: { "totalAssets": "30694.51" }
 ```
 
 ### 2. Get Top Securities by Market Exposure
 ```
-GET /api/stats/top-securities
+[GET /api/stats/top-securities](http://localhost:5001/api/stats/total-assets)
 Response for sample data: [{ "ticker": "HEMCX", "exposure": "30694.51" }]
 ```
 
