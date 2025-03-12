@@ -22,7 +22,7 @@ app.use('/api/accounts', accountRoutes);
 app.use('/api/advisors', advisorRoutes);
 app.use('/api/securities', securityRoutes);
 
-// ✅ Add Health Check Route
+// Add Health Check Route
 app.get('/', (req, res) => {
     res.send('Advisor Dashboard API is running...');
 });
@@ -40,5 +40,5 @@ app.use((err, req, res, next) => {
 
 // Start Server
 app.listen(PORT, () => {
-    console.log(`✅ Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
