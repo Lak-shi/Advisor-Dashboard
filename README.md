@@ -33,8 +33,8 @@ advisor-dashboard/
 
 ## Setup Instructions
 ### Prerequisites
-- **Node.js** (v18+)
-- **PostgreSQL** (run on Docker for convenience)
+- **Node.js**
+- **PostgreSQL** (run on Docker for convenience or locally)
 - **Docker** (optional, for containerized deployment)
 
 ### Installation
@@ -53,11 +53,13 @@ advisor-dashboard/
 ### Database Setup
 1. Start PostgreSQL (if using Docker):
    docker run --name some-postgres -p 5431:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+   or
+   Start the PostgreSQL service from pgAdmin
 
-2. Initialize the database:
+3. Initialize the database:
    psql -U postgres -d advisor_dashboard -f src/db/schema.sql
 
-3. Run the data processing script:
+4. Run the data processing script:
    node src/data-processing/processData.js
 
 
