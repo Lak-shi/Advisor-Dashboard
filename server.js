@@ -1,6 +1,5 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import cors from 'cors';
 import statsRoutes from './src/routes/statsRoutes.js';
 import accountRoutes from './src/routes/accountRoutes.js';
 import advisorRoutes from './src/routes/advisorRoutes.js';
@@ -13,7 +12,6 @@ const app = express();
 const PORT = process.env.PORT || 5001;
 
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Register Routes
