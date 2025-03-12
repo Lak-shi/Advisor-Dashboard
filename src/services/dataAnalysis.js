@@ -1,6 +1,6 @@
 import pool from '../config/db.js';
 
-// 1️⃣ Get total value of all accounts
+// Get total value of all accounts
 export const getTotalManagedAssets = async () => {
     const { rows } = await pool.query(`
         SELECT SUM(h.units * h.unit_price) AS total_assets
@@ -9,7 +9,7 @@ export const getTotalManagedAssets = async () => {
     return rows[0]?.total_assets || 0;
 };
 
-// 2️⃣ Get top securities by market exposure
+// Get top securities by market exposure
 export const getTopSecurities = async () => {
     const { rows } = await pool.query(`
         SELECT s.ticker, SUM(h.units * h.unit_price) AS exposure
@@ -22,7 +22,7 @@ export const getTopSecurities = async () => {
     return rows;
 };
 
-// 3️⃣ Get advisors ranked by assets per custodian
+// Get advisors ranked by assets per custodian
 export const getAdvisorsByCustodian = async () => {
     const { rows } = await pool.query(`
         SELECT a.name AS advisor_name, c.name AS custodian_name, SUM(h.units * h.unit_price) AS assets
