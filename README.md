@@ -69,19 +69,19 @@ Server should start on **http://localhost:5001**
 ### API Endpoints
 ### 1. Get Total Managed Assets
 ```
-[GET /api/stats/total-assets](http://localhost:5001/api/stats/total-assets)
+http://localhost:5001/api/stats/total-assets
 Response for sample data: { "totalAssets": "30694.51" }
 ```
 
 ### 2. Get Top Securities by Market Exposure
 ```
-[GET /api/stats/top-securities](http://localhost:5001/api/stats/total-assets)
+http://localhost:5001/api/stats/top-securities
 Response for sample data: [{ "ticker": "HEMCX", "exposure": "30694.51" }]
 ```
 
 ### 3. Get Advisors Ranked by Custodian
 ```
-GET /api/stats/advisors-by-custodian
+http://localhost:5001/api/stats/advisors-by-custodian
 Response for sample data: [{ "advisor_name": "Randall", "custodian_name": "Schwab", "assets": "30694.51" }]
 ```
 
