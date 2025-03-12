@@ -96,5 +96,13 @@ Response for sample data: [{ "advisor_name": "Randall", "custodian_name": "Schwa
 - Implement caching for frequently accessed queries.
 - Deploy on cloud with CI/CD pipeline.
 - Enhance security measures (e.g., API authentication & authorization)
+- Improve error handling and logging.
 
+## Implementation Summary
+The Advisor Dashboard backend is designed to store, process, and analyze financial data efficiently. It is structured to keep things organized, scalable, and easy to maintain.
+
+- PostgreSQL stores financial data securely, using indexed tables for fast queries.
+- Express.js provides API routes to fetch advisor, account, and securities data.
+- Database Transactions ensure that no partial or broken data gets inserted.
+- SQL Queries are optimized to calculate total assets, top securities, and advisor rankings.
 
