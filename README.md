@@ -52,7 +52,9 @@ advisor-dashboard/
 
 ### Database Setup
 1. Start PostgreSQL (if using Docker):
-   - docker run --name some-postgres -p 5431:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+   '''
+   docker run --name some-postgres -p 5431:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+   '''
    OR
    - Start the PostgreSQL service from pgAdmin
 
